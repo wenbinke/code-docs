@@ -36,7 +36,7 @@ git pull
 :::
 
 ```bash
-git merge orgin/master # 将master分支代码合并到本分支
+git merge origin/master # 将master分支代码合并到本分支
 ```
 
 #### Squash Merge
