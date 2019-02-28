@@ -1,5 +1,6 @@
 module.exports = {
   port: 8082,
+  base: '/code-docs/',
   evergreen: true,
   locales: {
     '/zh/': {

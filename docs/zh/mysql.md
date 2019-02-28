@@ -104,6 +104,8 @@ ALTER TABLE products ADD KEY `ix_shop_id` (`shop_id`); -- 添加索引
 ALTER TABLE members ADD UNIQUE KEY `uix_phone` (`phone`); -- 添加索引
 
 ALTER TABLE products DROP KEY `ix_shop_id`; -- 删除索引
+
+CREATE TABLE users_bak (SELECT * FROM users) -- 备份表数据
 ```
 
 ## 枚举

@@ -58,6 +58,17 @@ client_max_body_size 100M;
     }
 ```
 
+或者
+
+```nginx
+server {
+    listen 	 80;
+    server_name  www.codedocs.io codedocs.io;
+
+    return 301 https://www.codedocs.io$request_uri;
+}
+```
+
 ### 纯静态网站配置
 
 `/etc/nginx/conf.d` 新增 `codedocs-web.conf` 文件保存以下内容。重启 `nginx`。
