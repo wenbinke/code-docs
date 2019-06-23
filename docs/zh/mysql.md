@@ -239,6 +239,49 @@ TRUNCATE TABLE mysql.general_log;
 SELECT * FROM mysql.general_log; -- 之后所有的查询语句都会记录在这张log表里面
 ```
 
+## CLI
+
+目前最好用的CLI工具是[https://github.com/dbcli/mycli](https://github.com/dbcli/mycli)
+
+### 连接数据库
+
+```bash
+mycli --host <host> --user <user> --password <password> --database <database>
+
+mysql -h<host> -u<user> -p<password> <database>
+```
+
+### 常用命令
+
+`use <database>`, `show tables`, `show create table <table>`
+
+### SQLDUMP
+
+```bash
+mysqldump --compact -h<host> -u<user> -p<password> --no-data <database> > test.sql
+```
+
+### 执行含有参数的SQL文件
+
+```bash
+mycli --host <host> --user <user> --password <password> --database <database> -e "set @price=725; source ./test.sql;"
+```
+
+`test.sql`内容可为
+
+```sql
+update products set price=@price;
+```
+
+### DSN别名
+
+在`~/.myclirc`文件配置以下内容可使用`mycli -d employees`快速连接`employees`数据库。`mycli --list-dsn`可列出所有DSN。
+
+```
+[alias_dsn]
+employees = mysql://root@localhost:3306/employees 
+```
+
 ## 分表分库
 
 TODO
