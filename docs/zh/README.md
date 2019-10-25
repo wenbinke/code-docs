@@ -48,7 +48,7 @@ sidebar: auto
 
 ## 其他
 
-[MySQL](/zh/mysql.html) [SSH](/zh/ssh.html) [Git](/zh/git.html) [Redis](/zh/redis.html) [Docker](/zh/docker.html) [VPN](/zh/vpn.html) [Nginx](/zh/nginx.html) [AWS](/zh/aws.html) [Tmux](/zh/tmux.html) [Vim](/zh/vim.html)
+[MySQL](/zh/mysql.html) [SSH](/zh/ssh.html) [Git](/zh/git.html) [Redis](/zh/redis.html) [Docker](/zh/docker.html) [VPN](/zh/vpn.html) [Nginx](/zh/nginx.html) [AWS](/zh/aws.html) [Tmux](/zh/tmux.html) [Vim](/zh/vim.html) [逆向工程](/zh/reverse-engineering.html)
 
 
 ## TODO
