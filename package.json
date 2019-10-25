@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.3.0",
+    "vuepress": "^1.3.0"
+  }
+}

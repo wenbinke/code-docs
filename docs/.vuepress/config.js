@@ -9,6 +9,14 @@ module.exports = {
       description: '让你的生活变得简单'
     }
   },
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-158673318-1'
+      }
+    ],
+  ],
   themeConfig: {
     sidebarDepth: 3,
     locales: {
@@ -42,6 +50,14 @@ module.exports = {
               ]
             }
           ],
+          '/zh/js/': [
+            '/zh/js/',
+          ],
+          '/zh/solutions/': [
+            '/zh/solutions/',
+            '/zh/solutions/ads',
+            '/zh/solutions/auth',
+          ],
           '/zh/python/': [
             {
               title: '基础',
@@ -52,8 +68,8 @@ module.exports = {
                 '/zh/python/variables',
                 '/zh/python/functions',
                 '/zh/python/flowcontrol',
-                '/zh/python/methods',
-                '/zh/python/concurrency'
+                '/zh/python/modules',
+                '/zh/python/class',
               ]
             },
             {
@@ -85,7 +101,8 @@ module.exports = {
                 '/zh/php/application/database',
                 '/zh/php/application/file',
                 '/zh/php/application/json',
-                '/zh/php/application/datetime'
+                '/zh/php/application/datetime',
+                '/zh/php/application/ops'
               ]
             }
           ],

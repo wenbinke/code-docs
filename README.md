@@ -3,17 +3,17 @@
 ## Install
 
 ```bash
-yarn global add vuepress
+yarn
 ```
 
 ## Run
 
 ```bash
-vuepress dev docs
+yarn dev
 ```
 
 ## Build
 
 ```bash
-vuepress build docs
+yarn build
 ```

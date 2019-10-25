@@ -5,7 +5,7 @@ sidebar: auto
 <script>
 export default {
   mounted () {
-    window.location.href = '/zh/'
+    window.location.href = '/code-docs/zh/'
   }
 }
 </script>

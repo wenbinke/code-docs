@@ -139,6 +139,8 @@ The four codes specified in ISO/IEC 5218 are:
 - 即使是查询 `SELECT * FROM products WHERE shop_id=?` 也不需要再单独创建 `shop_id` 索引了，因为 `ix_shop_id_category_id` 已经包含了 `shop_id` 索引。
 
 - `SELECT * FROM products WHERE category_id=?` 因为语句没有 `shop_id`，所以按照 `最左前缀匹配原则` 是用不到任何索引的。
+
+- 通过索引查询的数据需要加 `ORDER BY`，否则 `SELECT` 出来的数据极有可能不是默认按主键排序的。
 :::
 
 ```sql

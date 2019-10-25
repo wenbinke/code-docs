@@ -69,6 +69,18 @@ server {
 }
 ```
 
+#### Https配置
+
+```nginx
+server {
+    listen 443 ssl;
+    server_name api.codedocs.io;
+
+    ssl_certificate /etc/nginx/cert/codedocs_io.pem;
+    ssl_certificate_key /etc/nginx/cert/codedocs_io.key;
+}
+```
+
 ### 纯静态网站配置
 
 `/etc/nginx/conf.d` 新增 `codedocs-web.conf` 文件保存以下内容。重启 `nginx`。
@@ -90,6 +102,9 @@ server {
     location / {
         index  index.html;
     }
+
+    access_log   /var/log/nginx/codedocs_api_access.log main buffer=32k flush=5s;
+    error_log    /var/log/nginx/codedocs_api_error.log;
 }
 
 server {
@@ -226,5 +241,57 @@ stream {
         proxy_timeout 3600s;
         proxy_connect_timeout 3600s;
     }
+}
+```
+
+### 分发流量
+
+[http://nginx.org/en/docs/http/ngx_http_upstream_module.html](http://nginx.org/en/docs/http/ngx_http_upstream_module.html)
+
+1. 文件 `/etc/nginx/sites-enabled/streams.conf` 加以下内容
+
+```nginx
+upstream backend {
+    server 127.0.0.1:8081;
+    server 127.0.0.1:8082;
+    server 127.0.0.1:8083;
+    server 127.0.0.1:8084;
+}
+```
+
+2. 使用的地方
+
+```nginx
+server {
+    location / {
+        proxy_pass http://backend;
+    }
+}
+```
+
+### Websocket
+
+```nginx
+map $http_upgrade $connection_upgrade {
+    default upgrade;
+    '' close;
+}
+
+server {
+     listen 80;
+     server_name ws.adoc.ink;
+     location / {
+         proxy_pass http://127.0.0.1:8098;
+         proxy_read_timeout 300s;
+         proxy_send_timeout 300s;
+         proxy_set_header X-Real-IP $remote_addr;
+         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+
+         proxy_http_version 1.1;
+         proxy_set_header Upgrade $http_upgrade;
+         proxy_set_header Connection $connection_upgrade;
+     }
+     access_log   /var/log/nginx/ws_access.log main buffer=32k flush=5s;
+     error_log    /var/log/nginx/ws_error.log;
 }
 ```

@@ -40,17 +40,20 @@ sidebar: auto
 
 ## 语言
 
-[Go](/zh/go/) [PHP](/zh/php/) [Bash](/zh/bash.html)
+[Go](/zh/go/) [PHP](/zh/php/) [Bash](/zh/bash.html) [Python](/zh/python/) [Node.js](/zh/js/)
 
 ## 工具
 
-[代理抓包](/zh/tools/proxy.html)
+[代理抓包](/zh/tools/proxy.html) [Tmux](/zh/tmux.html) [Git](/zh/git.html)
+
+## 规范与约定
+
+[RESTful API](/zh/restful.html)
 
 ## 其他
 
-[MySQL](/zh/mysql.html) [SSH](/zh/ssh.html) [Git](/zh/git.html) [Redis](/zh/redis.html) [Docker](/zh/docker.html) [VPN](/zh/vpn.html) [Nginx](/zh/nginx.html) [AWS](/zh/aws.html) [Tmux](/zh/tmux.html) [Vim](/zh/vim.html)
-
+[MySQL](/zh/mysql.html) [SSH](/zh/ssh.html) [Redis](/zh/redis.html) [Docker](/zh/docker.html) [VPN](/zh/vpn.html) [Nginx](/zh/nginx.html) [AWS](/zh/aws.html) [Vim](/zh/vim.html) [逆向工程](/zh/reverse-engineering.html) [常见问题](/zh/issues.html) [解决方案](/zh/solutions/)  [Network](/zh/network.html)  [杂项](/zh/misc.html) 
 
 ## TODO
 
-Python，Kotlin，Javascript，C#，RESTful API，Elasticsearch，Rabbitmq，Exception，Regex
+Kotlin，C#，Elasticsearch，Rabbitmq，Exception，Regex
