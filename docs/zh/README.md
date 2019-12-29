@@ -40,7 +40,7 @@ sidebar: auto
 
 ## 语言
 
-[Go](/zh/go/) [PHP](/zh/php/) [Bash](/zh/bash.html)
+[Go](/zh/go/) [PHP](/zh/php/) [Bash](/zh/bash.html) [Python](/zh/python.html)
 
 ## 工具
 
@@ -53,4 +53,4 @@ sidebar: auto
 
 ## TODO
 
-Python，Kotlin，Javascript，C#，RESTful API，Elasticsearch，Rabbitmq，Exception，Regex
+Kotlin，Javascript，C#，RESTful API，Elasticsearch，Rabbitmq，Exception，Regex
