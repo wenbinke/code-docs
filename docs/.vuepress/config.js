@@ -52,7 +52,8 @@ module.exports = {
                 '/zh/python/variables',
                 '/zh/python/functions',
                 '/zh/python/flowcontrol',
-                '/zh/python/methods',
+                '/zh/python/modules',
+                '/zh/python/class',
                 '/zh/python/concurrency'
               ]
             },
