@@ -40,7 +40,7 @@ sidebar: auto
 
 ## 语言
 
-[Go](/zh/go/) [PHP](/zh/php/) [Bash](/zh/bash.html) [Python](/zh/python.html)
+[Go](/zh/go/) [PHP](/zh/php/) [Bash](/zh/bash.html) [Python](/zh/python/)
 
 ## 工具
 
