@@ -54,7 +54,6 @@ module.exports = {
                 '/zh/python/flowcontrol',
                 '/zh/python/modules',
                 '/zh/python/class',
-                '/zh/python/concurrency'
               ]
             },
             {
