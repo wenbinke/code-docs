@@ -20,6 +20,8 @@ ssh root@<remote-ip> # 登录远程服务器
 scp -r root@<remote-ip>:/tmp/app.log ~/Downloads # 将远程服务器上的文件下载到本机Downloads目录下
 
 scp ~/Downloads/go.tar.gz root@<remote-ip>:/tmp # 将本机文件上传到远程服务器上
+
+scp -F ./ssh-config -r workers/sample.sh xiaoke-dev:/tmp # 指定ssh config文件
 ```
 
 ## 文件
@@ -113,5 +115,9 @@ history | grep php # 查看最近含有php字眼的命令记录
 whereis openssl
 
 which nginx
+
+node app.js > /dev/null 2>&1 # 不输出执行内容，包括出错信息
+
+nohup redis-server & # 不挂断运行命令
 ```
 

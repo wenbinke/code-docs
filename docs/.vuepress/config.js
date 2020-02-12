@@ -85,7 +85,8 @@ module.exports = {
                 '/zh/php/application/database',
                 '/zh/php/application/file',
                 '/zh/php/application/json',
-                '/zh/php/application/datetime'
+                '/zh/php/application/datetime',
+                '/zh/php/application/ops'
               ]
             }
           ],
