@@ -280,6 +280,8 @@ const item = await db.items.findOne({
     }
 })
 
+item.setDataValue('new_field', data) // 添加新字段
+
 await db.items.create({
   name: 'yyy'
 })

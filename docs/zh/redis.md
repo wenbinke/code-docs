@@ -37,6 +37,10 @@ redis-cli # 连接本地Redis Server
 redis-cli -h <remote-host> -p 6379 # 连接远程Redis Server
 ```
 
+## 命名
+
+Key的命名用 `:` 连接。比如 `object-type:id:field`。
+
 ## 操作
 
 ### AUTH 

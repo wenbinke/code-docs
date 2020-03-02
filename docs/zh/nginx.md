@@ -50,6 +50,14 @@ client_max_body_size 100M;
     }
 ```
 
+#### Access log格式
+
+```nginx
+log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+		'$status $body_bytes_sent $request_time "$http_referer" '
+		'"$http_user_agent" "$http_x_forwarded_for" "$host" "$upstream_addr" "$upstream_response_time"';
+```
+
 #### Https强制跳转
 
 ```nginx

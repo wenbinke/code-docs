@@ -1,7 +1,10 @@
 module.exports = {
   port: 8082,
-  base: '/code-docs/',
+  base: '/',
   evergreen: true,
+  head: [
+    ['link', { rel: 'shortcut icon', href: '/favicon.png' }]
+  ],
   locales: {
     '/zh/': {
       lang: 'zh-CN',
@@ -83,28 +86,28 @@ module.exports = {
             }
           ],
           '/zh/php/': [{
-              title: '基础',
-              children: [
-                '/zh/php/',
-                '/zh/php/installation',
-                '/zh/php/convention',
-                '/zh/php/variables',
-                '/zh/php/functions',
-                '/zh/php/flowcontrol',
-                '/zh/php/moretypes',
-                '/zh/php/class',
-              ]
-            },
-            {
-              title: '应用',
-              children: [
-                '/zh/php/application/database',
-                '/zh/php/application/file',
-                '/zh/php/application/json',
-                '/zh/php/application/datetime',
-                '/zh/php/application/ops'
-              ]
-            }
+            title: '基础',
+            children: [
+              '/zh/php/',
+              '/zh/php/installation',
+              '/zh/php/convention',
+              '/zh/php/variables',
+              '/zh/php/functions',
+              '/zh/php/flowcontrol',
+              '/zh/php/moretypes',
+              '/zh/php/class',
+            ]
+          },
+          {
+            title: '应用',
+            children: [
+              '/zh/php/application/database',
+              '/zh/php/application/file',
+              '/zh/php/application/json',
+              '/zh/php/application/datetime',
+              '/zh/php/application/ops'
+            ]
+          }
           ],
           '/zh/tools/': [
             '/zh/tools/proxy',

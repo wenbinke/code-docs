@@ -39,7 +39,7 @@ tail –n +50 /tmp/app.log # 打印app.log从第50行开始的内容
 
 cat /tmp/app.log | grep graphql # 列出app.log含有graphql的片段
 
-df -h # 查看剩余磁盘空间
+df -h -d1 # 查看剩余磁盘空间, -d1统计第一层文件和目录
 
 du -h /etc # 文件夹大小
 
