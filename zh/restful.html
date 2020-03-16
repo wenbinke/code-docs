@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>API RESTful | Code Docs</title>
+    <meta name="description" content="让你的生活变得简单">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.7dc41318.css" as="style"><link rel="preload" href="/assets/js/app.f88ae1a5.js" as="script"><link rel="preload" href="/assets/js/2.4be379b3.js" as="script"><link rel="preload" href="/assets/js/59.1de1f331.js" as="script"><link rel="prefetch" href="/assets/js/10.e0cd67f8.js"><link rel="prefetch" href="/assets/js/11.38fbdb47.js"><link rel="prefetch" href="/assets/js/12.85fd4e46.js"><link rel="prefetch" href="/assets/js/13.2541c587.js"><link rel="prefetch" href="/assets/js/14.a4ea9f6f.js"><link rel="prefetch" href="/assets/js/15.d3a97a3d.js"><link rel="prefetch" href="/assets/js/16.0d1af2a6.js"><link rel="prefetch" href="/assets/js/17.a3b32e45.js"><link rel="prefetch" href="/assets/js/18.0d9c767e.js"><link rel="prefetch" href="/assets/js/19.40c2dba7.js"><link rel="prefetch" href="/assets/js/20.581db0b9.js"><link rel="prefetch" href="/assets/js/21.69e7b4f8.js"><link rel="prefetch" href="/assets/js/22.3eb7eff8.js"><link rel="prefetch" href="/assets/js/23.8641f080.js"><link rel="prefetch" href="/assets/js/24.50316358.js"><link rel="prefetch" href="/assets/js/25.f4473517.js"><link rel="prefetch" href="/assets/js/26.a7330b7a.js"><link rel="prefetch" href="/assets/js/27.d7ebf121.js"><link rel="prefetch" href="/assets/js/28.17a892cf.js"><link rel="prefetch" href="/assets/js/29.36c60ab2.js"><link rel="prefetch" href="/assets/js/3.a2e54aa3.js"><link rel="prefetch" href="/assets/js/30.77606581.js"><link rel="prefetch" href="/assets/js/31.2d23d33b.js"><link rel="prefetch" href="/assets/js/32.6f81889e.js"><link rel="prefetch" href="/assets/js/33.034df962.js"><link rel="prefetch" href="/assets/js/34.304c20d8.js"><link rel="prefetch" href="/assets/js/35.e6a394e7.js"><link rel="prefetch" href="/assets/js/36.fc4ad0fd.js"><link rel="prefetch" href="/assets/js/37.e4399371.js"><link rel="prefetch" href="/assets/js/38.11ad7943.js"><link rel="prefetch" href="/assets/js/39.f9af7faf.js"><link rel="prefetch" href="/assets/js/4.3caca420.js"><link rel="prefetch" href="/assets/js/40.f2900077.js"><link rel="prefetch" href="/assets/js/41.16687e70.js"><link rel="prefetch" href="/assets/js/42.6d76d5ed.js"><link rel="prefetch" href="/assets/js/43.d73917b8.js"><link rel="prefetch" href="/assets/js/44.8de10bef.js"><link rel="prefetch" href="/assets/js/45.bd1918d3.js"><link rel="prefetch" href="/assets/js/46.2f74e238.js"><link rel="prefetch" href="/assets/js/47.1e441e7a.js"><link rel="prefetch" href="/assets/js/48.0f46f83f.js"><link rel="prefetch" href="/assets/js/49.33615a95.js"><link rel="prefetch" href="/assets/js/5.f01ebfcb.js"><link rel="prefetch" href="/assets/js/50.bfb363e5.js"><link rel="prefetch" href="/assets/js/51.40e95d3b.js"><link rel="prefetch" href="/assets/js/52.c3d5330a.js"><link rel="prefetch" href="/assets/js/53.d2a767ec.js"><link rel="prefetch" href="/assets/js/54.aef594f5.js"><link rel="prefetch" href="/assets/js/55.93d2682c.js"><link rel="prefetch" href="/assets/js/56.13ad44a5.js"><link rel="prefetch" href="/assets/js/57.a82e7dd5.js"><link rel="prefetch" href="/assets/js/58.5b469ef3.js"><link rel="prefetch" href="/assets/js/6.a1b3829f.js"><link rel="prefetch" href="/assets/js/60.b9ec3fc3.js"><link rel="prefetch" href="/assets/js/61.73524b91.js"><link rel="prefetch" href="/assets/js/62.c3a424fd.js"><link rel="prefetch" href="/assets/js/63.05ad037b.js"><link rel="prefetch" href="/assets/js/64.0bb07fd6.js"><link rel="prefetch" href="/assets/js/65.7126cf00.js"><link rel="prefetch" href="/assets/js/66.8db6799d.js"><link rel="prefetch" href="/assets/js/67.1edb235e.js"><link rel="prefetch" href="/assets/js/68.15bff8eb.js"><link rel="prefetch" href="/assets/js/69.6fe4c206.js"><link rel="prefetch" href="/assets/js/7.986123ae.js"><link rel="prefetch" href="/assets/js/8.eaf297f8.js"><link rel="prefetch" href="/assets/js/9.ad4f296e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7dc41318.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zh/" class="home-link router-link-active"><!----> <span class="site-name">Code Docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>API RESTful</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zh/restful.html#get" class="sidebar-link">GET</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/zh/restful.html#post" class="sidebar-link">POST</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/zh/restful.html#patch" class="sidebar-link">PATCH</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/zh/restful.html#put" class="sidebar-link">PUT</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/zh/restful.html#delete" class="sidebar-link">DELETE</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/zh/restful.html#error" class="sidebar-link">Error</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="api-restful"><a href="#api-restful" class="header-anchor">#</a> API RESTful</h1> <p>此篇列出常用的API设计。</p> <p>API URL中间加个 <code>api</code> 以免将来此域名要划分出其他子目录。通常API功能是不停迭代上去的，涉及到数据库结构的考虑维护成本的情况下极少同时存在两个版本的api，所以并不建议在URL上加类似 <code>v1</code> 的版本号。</p> <h2 id="get"><a href="#get" class="header-anchor">#</a> GET</h2> <p><code>GET</code> 用于获取数据。</p> <p><strong>Request</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 创建数据示例</span>
+<span class="token function">curl</span> --request GET <span class="token punctuation">\</span>
+  --url http://api.adoc.ink/api/items?q<span class="token operator">=</span>:q<span class="token operator">&amp;</span><span class="token assign-left variable">page_index</span><span class="token operator">=</span><span class="token number">0</span><span class="token operator">&amp;</span><span class="token assign-left variable">page_size</span><span class="token operator">=</span><span class="token number">20</span> <span class="token punctuation">\</span>
+  --header <span class="token string">'content-type: application/json'</span> <span class="token punctuation">\</span>
+  --header <span class="token string">'authorization: Bearer &lt;token&gt;'</span>
+</code></pre></div><p><strong>Response</strong></p> <blockquote><p>Response status 200 OK</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+    <span class="token string">&quot;count&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;items&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span> 
+        <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Sample 1&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;category&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Foo&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>Request</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 创建数据示例</span>
+<span class="token function">curl</span> --request GET <span class="token punctuation">\</span>
+  --url http://api.adoc.ink/api/items/:id <span class="token punctuation">\</span>
+  --header <span class="token string">'content-type: application/json'</span> <span class="token punctuation">\</span>
+  --header <span class="token string">'authorization: Bearer &lt;token&gt;'</span>
+</code></pre></div><p><strong>Response</strong></p> <blockquote><p>Response status 200 OK</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span> 
+    <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Sample 1&quot;</span><span class="token punctuation">,</span>
+	<span class="token string">&quot;category&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Foo&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>找不到资源约定返回400错误</p></blockquote> <h2 id="post"><a href="#post" class="header-anchor">#</a> POST</h2> <p><code>POST</code> 用于创建数据或者执行某个动作。</p> <p><strong>Request</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 创建数据示例</span>
+<span class="token function">curl</span> --request POST <span class="token punctuation">\</span>
+  --url http://api.adoc.ink/api/items <span class="token punctuation">\</span>
+  --header <span class="token string">'content-type: application/json'</span> <span class="token punctuation">\</span>
+  --header <span class="token string">'authorization: Bearer &lt;token&gt;'</span> <span class="token punctuation">\</span>
+  --data <span class="token string">'{
+	&quot;name&quot;: &quot;Sample 1&quot;,
+	&quot;category&quot;: &quot;Foo&quot;
+}'</span>
+</code></pre></div><p><strong>Response</strong></p> <blockquote><p>Response status 201 Created</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span> 
+    <span class="token string">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="patch"><a href="#patch" class="header-anchor">#</a> PATCH</h2> <p><code>PATCH</code> 可更新数据部分字段。</p> <p><strong>Request</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 更新数据示例</span>
+<span class="token function">curl</span> --request PATCH <span class="token punctuation">\</span>
+  --url http://api.adoc.ink/api/items/:id <span class="token punctuation">\</span>
+  --header <span class="token string">'content-type: application/json'</span> <span class="token punctuation">\</span>
+  --header <span class="token string">'authorization: Bearer &lt;token&gt;'</span> <span class="token punctuation">\</span>
+  --data <span class="token string">'{
+	&quot;name&quot;: &quot;Sample 2&quot;,
+}'</span>
+</code></pre></div><p><strong>Response</strong></p> <blockquote><p>Response status 204 No Content</p></blockquote> <h2 id="put"><a href="#put" class="header-anchor">#</a> PUT</h2> <p><code>PUT</code> 用于更新单个数据的所有字段数据。</p> <p><strong>Request</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 更新数据示例</span>
+<span class="token function">curl</span> --request PUT <span class="token punctuation">\</span>
+  --url http://api.adoc.ink/api/items/:id <span class="token punctuation">\</span>
+  --header <span class="token string">'content-type: application/json'</span> <span class="token punctuation">\</span>
+  --header <span class="token string">'authorization: Bearer &lt;token&gt;'</span> <span class="token punctuation">\</span>
+  --data <span class="token string">'{
+	&quot;name&quot;: &quot;Sample 2&quot;,
+	&quot;category&quot;: &quot;Bar&quot;,
+}'</span>
+</code></pre></div><p><strong>Response</strong></p> <blockquote><p>Response status 204 No Content</p></blockquote> <h2 id="delete"><a href="#delete" class="header-anchor">#</a> DELETE</h2> <p><code>DELETE</code> 用于删除数据。</p> <p><strong>Request</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 更新数据示例</span>
+<span class="token function">curl</span> --request DELETE <span class="token punctuation">\</span>
+  --url http://api.adoc.ink/api/items/:id <span class="token punctuation">\</span>
+  --header <span class="token string">'content-type: application/json'</span> <span class="token punctuation">\</span>
+  --header <span class="token string">'authorization: Bearer &lt;token&gt;'</span>
+</code></pre></div><p><strong>Response</strong></p> <blockquote><p>Response status 204 No Content</p></blockquote> <h2 id="error"><a href="#error" class="header-anchor">#</a> Error</h2> <p><strong>出错Response格式</strong></p> <p>一般来说简单的api有 <code>code</code> 和 <code>message</code> 就可以了。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;error&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;BadArgument&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Multiple errors in ContactInfo data&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;details&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;NullValue&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;target&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PhoneNumber&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Phone number must not be null&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">&quot;code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;NullValue&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;target&quot;</span><span class="token operator">:</span> <span class="token string">&quot;LastName&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;message&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Last name must not be null&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>未登录</strong></p> <blockquote><p>Response status 401 Unauthorized</p></blockquote> <p><strong>禁止访问</strong></p> <blockquote><p>Response status 403 Forbidden</p></blockquote> <p><strong>其他</strong></p> <blockquote><p>Response status 400</p></blockquote></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次编辑时间:</span> <span class="time">2019/10/25 下午2:58:15</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f88ae1a5.js" defer></script><script src="/assets/js/2.4be379b3.js" defer></script><script src="/assets/js/59.1de1f331.js" defer></script>
+  </body>
+</html>

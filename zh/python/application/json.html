@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JSON | Code Docs</title>
+    <meta name="description" content="让你的生活变得简单">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.7dc41318.css" as="style"><link rel="preload" href="/assets/js/app.f88ae1a5.js" as="script"><link rel="preload" href="/assets/js/2.4be379b3.js" as="script"><link rel="preload" href="/assets/js/48.0f46f83f.js" as="script"><link rel="prefetch" href="/assets/js/10.e0cd67f8.js"><link rel="prefetch" href="/assets/js/11.38fbdb47.js"><link rel="prefetch" href="/assets/js/12.85fd4e46.js"><link rel="prefetch" href="/assets/js/13.2541c587.js"><link rel="prefetch" href="/assets/js/14.a4ea9f6f.js"><link rel="prefetch" href="/assets/js/15.d3a97a3d.js"><link rel="prefetch" href="/assets/js/16.0d1af2a6.js"><link rel="prefetch" href="/assets/js/17.a3b32e45.js"><link rel="prefetch" href="/assets/js/18.0d9c767e.js"><link rel="prefetch" href="/assets/js/19.40c2dba7.js"><link rel="prefetch" href="/assets/js/20.581db0b9.js"><link rel="prefetch" href="/assets/js/21.69e7b4f8.js"><link rel="prefetch" href="/assets/js/22.3eb7eff8.js"><link rel="prefetch" href="/assets/js/23.8641f080.js"><link rel="prefetch" href="/assets/js/24.50316358.js"><link rel="prefetch" href="/assets/js/25.f4473517.js"><link rel="prefetch" href="/assets/js/26.a7330b7a.js"><link rel="prefetch" href="/assets/js/27.d7ebf121.js"><link rel="prefetch" href="/assets/js/28.17a892cf.js"><link rel="prefetch" href="/assets/js/29.36c60ab2.js"><link rel="prefetch" href="/assets/js/3.a2e54aa3.js"><link rel="prefetch" href="/assets/js/30.77606581.js"><link rel="prefetch" href="/assets/js/31.2d23d33b.js"><link rel="prefetch" href="/assets/js/32.6f81889e.js"><link rel="prefetch" href="/assets/js/33.034df962.js"><link rel="prefetch" href="/assets/js/34.304c20d8.js"><link rel="prefetch" href="/assets/js/35.e6a394e7.js"><link rel="prefetch" href="/assets/js/36.fc4ad0fd.js"><link rel="prefetch" href="/assets/js/37.e4399371.js"><link rel="prefetch" href="/assets/js/38.11ad7943.js"><link rel="prefetch" href="/assets/js/39.f9af7faf.js"><link rel="prefetch" href="/assets/js/4.3caca420.js"><link rel="prefetch" href="/assets/js/40.f2900077.js"><link rel="prefetch" href="/assets/js/41.16687e70.js"><link rel="prefetch" href="/assets/js/42.6d76d5ed.js"><link rel="prefetch" href="/assets/js/43.d73917b8.js"><link rel="prefetch" href="/assets/js/44.8de10bef.js"><link rel="prefetch" href="/assets/js/45.bd1918d3.js"><link rel="prefetch" href="/assets/js/46.2f74e238.js"><link rel="prefetch" href="/assets/js/47.1e441e7a.js"><link rel="prefetch" href="/assets/js/49.33615a95.js"><link rel="prefetch" href="/assets/js/5.f01ebfcb.js"><link rel="prefetch" href="/assets/js/50.bfb363e5.js"><link rel="prefetch" href="/assets/js/51.40e95d3b.js"><link rel="prefetch" href="/assets/js/52.c3d5330a.js"><link rel="prefetch" href="/assets/js/53.d2a767ec.js"><link rel="prefetch" href="/assets/js/54.aef594f5.js"><link rel="prefetch" href="/assets/js/55.93d2682c.js"><link rel="prefetch" href="/assets/js/56.13ad44a5.js"><link rel="prefetch" href="/assets/js/57.a82e7dd5.js"><link rel="prefetch" href="/assets/js/58.5b469ef3.js"><link rel="prefetch" href="/assets/js/59.1de1f331.js"><link rel="prefetch" href="/assets/js/6.a1b3829f.js"><link rel="prefetch" href="/assets/js/60.b9ec3fc3.js"><link rel="prefetch" href="/assets/js/61.73524b91.js"><link rel="prefetch" href="/assets/js/62.c3a424fd.js"><link rel="prefetch" href="/assets/js/63.05ad037b.js"><link rel="prefetch" href="/assets/js/64.0bb07fd6.js"><link rel="prefetch" href="/assets/js/65.7126cf00.js"><link rel="prefetch" href="/assets/js/66.8db6799d.js"><link rel="prefetch" href="/assets/js/67.1edb235e.js"><link rel="prefetch" href="/assets/js/68.15bff8eb.js"><link rel="prefetch" href="/assets/js/69.6fe4c206.js"><link rel="prefetch" href="/assets/js/7.986123ae.js"><link rel="prefetch" href="/assets/js/8.eaf297f8.js"><link rel="prefetch" href="/assets/js/9.ad4f296e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7dc41318.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zh/" class="home-link router-link-active"><!----> <span class="site-name">Code Docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>应用</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/zh/python/application/database.html" class="sidebar-link">数据库</a></li><li><a href="/zh/python/application/file.html" class="sidebar-link">读写文件</a></li><li><a href="/zh/python/application/json.html" class="active sidebar-link">JSON</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zh/python/application/json.html#序列化" class="sidebar-link">序列化</a></li><li class="sidebar-sub-header"><a href="/zh/python/application/json.html#反序列化" class="sidebar-link">反序列化</a></li></ul></li><li><a href="/zh/python/application/datetime.html" class="sidebar-link">时间</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="json"><a href="#json" class="header-anchor">#</a> JSON</h1> <h2 id="序列化"><a href="#序列化" class="header-anchor">#</a> 序列化</h2> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+  
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+<span class="token keyword">import</span> <span class="token string">&quot;encoding/json&quot;</span>
+
+<span class="token keyword">type</span> dataModel <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+    ID   <span class="token builtin">int</span>      <span class="token string">`json:&quot;id&quot;`</span>
+    Name <span class="token builtin">string</span>   <span class="token string">`json:&quot;name&quot;`</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    data <span class="token operator">:=</span> dataModel<span class="token punctuation">{</span>
+        ID<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+        Name<span class="token punctuation">:</span> <span class="token string">&quot;iPhone&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+
+    result<span class="token punctuation">,</span> <span class="token boolean">_</span> <span class="token operator">:=</span> json<span class="token punctuation">.</span><span class="token function">Marshal</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+    fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token function">string</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="反序列化"><a href="#反序列化" class="header-anchor">#</a> 反序列化</h2> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+  
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+<span class="token keyword">import</span> <span class="token string">&quot;encoding/json&quot;</span>
+
+<span class="token keyword">type</span> dataModel <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+    ID   <span class="token builtin">int</span>      <span class="token string">`json:&quot;id&quot;`</span>
+    Name <span class="token builtin">string</span>   <span class="token string">`json:&quot;name&quot;`</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    str <span class="token operator">:=</span> <span class="token string">`{&quot;id&quot;:1,&quot;name&quot;:&quot;iPhone&quot;}`</span>
+    res <span class="token operator">:=</span> dataModel<span class="token punctuation">{</span><span class="token punctuation">}</span>
+    json<span class="token punctuation">.</span><span class="token function">Unmarshal</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token function">byte</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>res<span class="token punctuation">)</span>
+    fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次编辑时间:</span> <span class="time">2018/9/15 上午9:46:37</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/zh/python/application/file.html" class="prev">
+        读写文件
+      </a></span> <span class="next"><a href="/zh/python/application/datetime.html">
+        时间
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f88ae1a5.js" defer></script><script src="/assets/js/2.4be379b3.js" defer></script><script src="/assets/js/48.0f46f83f.js" defer></script>
+  </body>
+</html>
